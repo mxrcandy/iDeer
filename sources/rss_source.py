@@ -37,7 +37,7 @@ class RssSource(BaseSource):
             help="[RSS] Feed URLs to fetch",
         )
         parser.add_argument(
-            "--rss_max_items", type=int, default=int(os.getenv("RSS_MAX_ITEMS", "30")),
+            "--rss_max_items", type=int, default=int(os.getenv("RSS_MAX_ITEMS") or "30"),
             help="[RSS] Max items to fetch and recommend",
         )
 
