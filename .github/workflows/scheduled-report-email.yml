@@ -1,6 +1,6 @@
 name: Scheduled Report Email
 
-on:
+"on":
   schedule:
     - cron: "*/5 * * * *"
   workflow_dispatch:
